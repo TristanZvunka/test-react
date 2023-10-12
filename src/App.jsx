@@ -1,5 +1,8 @@
 import PokemonCard from "./components/PokemonCard.jsx"
 
+PokemonCard.PropTypes = {
+  
+}
 function App() {
   const pokemonList = [
     {
@@ -12,9 +15,11 @@ function App() {
     },
   ]
 
+
+
   return (
     <div>
-      <PokemonCard pokemon={pokemonList[0].name} img={pokemonList[0].imgSrc}/>
+      <PokemonCard name={pokemonList[0].name} img={pokemonList[0].imgSrc}/>
     </div>
   );
 
